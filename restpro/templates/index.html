@@ -1,0 +1,24 @@
+<table align="center" border="1px">
+    <th>Id</th>
+    <th>CName</th>
+    <th>CEmail</th>
+    <th>Mobile</th>
+    <th>Product Id</th>
+    <th>Product Name</th>
+    <th>Product Price</th>
+    <th>Product Category</th>
+    <th>Product Company</th>
+    {%for i in data%}
+    <tr>
+        <td>{{i.id}}</td>
+        <td>{{i.cname}}</td>
+        <td>{{i.cemail}}</td>
+        <td>{{i.mob}}</td>
+        <td>{{i.product.id}}</td>
+        <td>{{i.product.name}}</td>
+        <td>{{i.product.price}}</td>
+        <td>{{i.product.cat}}</td>
+        <td>{{i.product.cmp}}</td>
+    </tr>
+    {%endfor%}
+</table>
